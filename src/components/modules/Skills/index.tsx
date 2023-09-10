@@ -21,8 +21,7 @@ const Skills = () => (
           More about me
         </h2>
         <p className="mb-[2.5rem] font-normal text-xl md:text-[26px] text-brand-secondary dark:text-slate-200 leading-[34px] typography">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry’s standard dummy.
+          Im lering!!
         </p>
         <Link href="#contact" className="button button-primary">
           Hire me
