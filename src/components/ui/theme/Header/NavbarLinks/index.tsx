@@ -39,13 +39,7 @@ const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
       >
         Projects
       </Link>
-      <Link
-        href={`${pathname}#contact`}
-        className="text-black mb-4 lg:mb-0 mr-0 lg:mr-4 dark:text-white lg:dark:text-black min-[2170px]:dark:text-white"
-        scroll
-      >
-        Contact
-      </Link>
+
       {hasMounted && <ToggleTheme />}
     </div>
   );

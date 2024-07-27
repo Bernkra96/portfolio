@@ -13,7 +13,7 @@ const HomePage = () => (
       <Intro />
       <Projects />
       <Skills />
-      <Contact />
+
       <Footer />
     </AllProviders>
   </>

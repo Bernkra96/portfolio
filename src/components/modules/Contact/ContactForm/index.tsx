@@ -9,7 +9,7 @@ import * as Yup from 'yup';
 const ContactForm = () => {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM as string);
 
-  return (
+ // return (
     <Formik
       initialValues={{
         name: '',
@@ -121,7 +121,7 @@ const ContactForm = () => {
         </Form>
       )}
     </Formik>
-  );
+  //);
 };
 
 export default ContactForm;

@@ -21,9 +21,12 @@ const Skills = () => (
           More about me
         </h2>
         <p className="mb-[2.5rem] font-normal text-xl md:text-[26px] text-brand-secondary dark:text-slate-200 leading-[34px] typography">
-          Im lering!!
+          Im leering!!
         </p>
-        <Link href="#contact" className="button button-primary">
+        <Link
+          href="https://www.linkedin.com/in/bernhard-kratky/"
+          className="button button-primary"
+        >
           Hire me
         </Link>
       </div>

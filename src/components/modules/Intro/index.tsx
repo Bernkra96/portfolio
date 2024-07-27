@@ -14,9 +14,12 @@ const Intro = () => (
           Hi There!
         </h1>
         <h2 className="mb-[2.5rem] text-2xl md:text-4xl text-brand-secondary dark:text-slate-200 typography">
-          Im Bernhard and a lering Dev!!!
+          Im Bernhard and a leering Dev!!!
         </h2>
-        <Link href="#contact" className="button button-primary">
+        <Link
+          href="https://www.linkedin.com/in/bernhard-kratky/"
+          className="button button-primary"
+        >
           Hire me
         </Link>
       </div>

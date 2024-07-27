@@ -1,5 +1,5 @@
 const seoConfig = {
-  title: 'John Doe',
+  title: 'Bernhard K.',
   description: 'I’m John and I’m a Backend & Devops engineer!',
   openGraph: {
     type: 'website',
