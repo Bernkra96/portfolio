@@ -4,6 +4,14 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <Image
+          className="rounded-full justify-center"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQHoNdeyf32qLg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700641055108?e=1732752000&v=beta&t=2ttW_NM5TEH0S2rlBt02v9TuMyInVyPghcdc7QGG8wg"
+          alt="Bernhard Image"
+          width={280}
+          height={280}
+          priority
+        />
         <h1 className="text-7xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
           {' '}
           Bernhard portfolio
@@ -75,7 +83,6 @@ export default function Home() {
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        {' '}
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://www.linkedin.com/in/bernhard-kratky/"
@@ -84,7 +91,24 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
+            className="dark:invert"
+            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+        </a>
+
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/Bernkra96"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            className="dark:invert"
+            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
             alt="Globe icon"
             width={16}
             height={16}
