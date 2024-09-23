@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="rounded-full justify-center"
-          src="https://media.licdn.com/dms/image/v2/D4D03AQHoNdeyf32qLg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700641055108?e=1732752000&v=beta&t=2ttW_NM5TEH0S2rlBt02v9TuMyInVyPghcdc7QGG8wg"
+          src="https://avatars.githubusercontent.com/u/110023253?v=4"
           alt="Bernhard Image"
           width={280}
           height={280}
@@ -94,8 +94,8 @@ export default function Home() {
             className="dark:invert"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
             alt="Globe icon"
-            width={16}
-            height={16}
+            width={32}
+            height={32}
           />
         </a>
 
@@ -110,8 +110,8 @@ export default function Home() {
             className="dark:invert"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
             alt="Globe icon"
-            width={16}
-            height={16}
+            width={32}
+            height={32}
           />
         </a>
       </footer>
