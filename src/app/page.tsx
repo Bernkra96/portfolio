@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import React from 'react';
 
 export default function Home() {
   return (
@@ -212,6 +213,8 @@ export default function Home() {
     </div>
   );
 }
+
+// Remove cookie or perform other actions
 
 //Project Tamped
 // <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
