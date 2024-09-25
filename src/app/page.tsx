@@ -188,7 +188,7 @@ export default function Home() {
             aria-hidden
             className="dark:invert"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
-            alt="Globe icon"
+            alt="Linkedin icon"
             width={32}
             height={32}
           />
@@ -204,7 +204,7 @@ export default function Home() {
             aria-hidden
             className="dark:invert"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
-            alt="Globe icon"
+            alt="Github icon"
             width={32}
             height={32}
           />
