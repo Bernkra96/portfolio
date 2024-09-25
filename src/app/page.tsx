@@ -166,6 +166,36 @@ export default function Home() {
           </div>
         </div>
 
+        <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
+          {' '}
+          Jobs
+        </h3>
+        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+            Volunteer Edu-game programmer
+          </h3>
+          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            2024.06 - 2024.09
+          </p>
+          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            YouLearnt, Manchester GB, Remote from Vienna
+          </p>
+        </div>
+
+        <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
+          Education
+        </h3>
+        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+            Full Stack Web Development Bootcamp
+          </h3>
+          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            2023
+          </p>
+          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            UpLeveled GmbH
+          </p>
+        </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
@@ -188,7 +218,7 @@ export default function Home() {
             aria-hidden
             className="dark:invert"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
-            alt="Globe icon"
+            alt="Linkedin icon"
             width={32}
             height={32}
           />
@@ -204,7 +234,7 @@ export default function Home() {
             aria-hidden
             className="dark:invert"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
-            alt="Globe icon"
+            alt="Github icon"
             width={32}
             height={32}
           />
