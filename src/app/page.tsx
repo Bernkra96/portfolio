@@ -111,7 +111,7 @@ export default function Home() {
             </a>
 
             <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              A Video Edu-game, where the Player must Build Up Food Chans to
+              A Video Edu-game, where the Player must Build Up food Chains to
               make Points. It is a Card Game, where you have hour Hand Cards
               that can Place to the Table Cards, but you must get the same place
               or higher in the Food Chain. Develop educational game ideas for
@@ -187,7 +187,7 @@ export default function Home() {
         </h3>
         <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-            Full Stack Web Development Bootcamp
+            Full Stack Web Development Boot camp
           </h3>
           <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
             2023
