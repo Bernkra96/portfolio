@@ -1,4 +1,4 @@
-// Ngit import {
+// import {
 // getRepo,
 // getRepos,
 // getReposFromSearch,
