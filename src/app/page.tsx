@@ -1,4 +1,4 @@
-// Nimport {
+// Ngit import {
 // getRepo,
 // getRepos,
 // getReposFromSearch,
