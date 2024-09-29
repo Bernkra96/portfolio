@@ -116,9 +116,32 @@ export default function Home() {
               that can Place to the Table Cards, but you must get the same place
               or higher in the Food Chain. Develop educational game ideas for
               kids up to the age of 14, focusing on Physics and Biology.
+            </p>
+            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
               Technologies used: Game in Unity for WebGL C# for Scripts Unity UI
               Toolkit for UI of Menus and same Button Dotween for Animation /
               Unity Audio Mixer
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+            <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+              Jump Game
+            </h3>
+
+            <a
+              href="https://bernkra.itch.io/jump-game-000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              On Web
+            </a>
+
+            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+              D2 Jump and Run Game, with multiple levels.
+            </p>
+            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+              Technologies used: Unity, C#, Unity for WebGL
             </p>
           </div>
 
@@ -159,9 +182,11 @@ export default function Home() {
               database check User authentication with session tokens and cookies
               User authorization with REST API Database creation and management
               with PostgreSQL Implementation of database migration Files written
-              in TypeScript Deployment via Fly.io Technologies used: Next.js,
-              TypeScript, Tailwind CCS, Docker, Fly.io, Cookies, Migrations,
-              Rest API
+              in TypeScript Deployment via Fly.io
+            </p>
+            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+              Technologies used: Next.js, TypeScript, Tailwind CCS, Docker,
+              Fly.io, Cookies, Migrations, Rest API
             </p>
           </div>
         </div>
