@@ -15,10 +15,15 @@ export default async function Home() {
     process.cwd() + '/src/app/page-job-data.json',
     'utf8',
   );
+  const pageProjectsFile = await fs.readFile(
+    process.cwd() + '/src/app/page-projects-data.json',
+    'utf8',
+  );
 
   const pageTextData = JSON.parse(pageInfoFile);
   const pageEducationData = JSON.parse(pageEducationFile);
   const pageJobData = JSON.parse(pageJobFile);
+  const pageProjectsData = JSON.parse(pageProjectsFile);
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -105,100 +110,63 @@ export default async function Home() {
           Projects
         </h2>
 
-        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-            <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-              Science Game Edu-game for YouLernit
-            </h3>
-
-            <a
-              href="https://www.linkedin.com/in/bernhard-kratky/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              On Linkedin
-            </a>
-
-            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              A Video Edu-game, where the Player must Build Up food Chains to
-              make Points. It is a Card Game, where you have hour Hand Cards
-              that can Place to the Table Cards, but you must get the same place
-              or higher in the Food Chain. Develop educational game ideas for
-              kids up to the age of 14, focusing on Physics and Biology.
-            </p>
-            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              Technologies used: Game in Unity for WebGL C# for Scripts Unity UI
-              Toolkit for UI of Menus and same Button Dotween for Animation /
-              Unity Audio Mixer
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-            <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-              Jump Game
-            </h3>
-
-            <a
-              href="https://bernkra.itch.io/jump-game-000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              On Web
-            </a>
-
-            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              D2 Jump and Run Game, with multiple levels.
-            </p>
-            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              Technologies used: Unity, C#, Unity for WebGL
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-            <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-              Canvas View
-            </h3>
-
-            <a
-              href="https://final-project-uplevelt.fly.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              On Web
-            </a>
-
-            <a
-              href="https://youtu.be/TIJNlu8PHhc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Video presentation
-            </a>
-
-            <a
-              href="https://github.com/Bernkra96/final-project"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              On Git
-            </a>
-
-            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              A social media web application, where users can login and make
-              posts on the page or comment on posts. Users can delete their
-              posts/comments. and admins can delete all. Key features: Design
-              from scratch with Tailwind CCS Admin control via Rest API and
-              database check User authentication with session tokens and cookies
-              User authorization with REST API Database creation and management
-              with PostgreSQL Implementation of database migration Files written
-              in TypeScript Deployment via Fly.io
-            </p>
-            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-              Technologies used: Next.js, TypeScript, Tailwind CCS, Docker,
-              Fly.io, Cookies, Migrations, Rest API
-            </p>
-          </div>
-        </div>
+        <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          {pageProjectsData.map(
+            (jobData: {
+              link: { url: string; text: string };
+              videoPresentation: { url: string; text: string };
+              gitLink: { url: string; text: string };
+              description: string;
+              technologies: string[];
+              title: string;
+              dateStart: string;
+              dateEnd: string;
+              content: string;
+            }) => (
+              <li
+                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+                key={jobData.title}
+              >
+                <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+                  {jobData.title}
+                </h3>
+                {jobData.link ? (
+                  <a
+                    href={jobData.link?.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {jobData.link?.text}
+                  </a>
+                ) : null}
+                {jobData.videoPresentation ? (
+                  <a
+                    href={jobData.videoPresentation?.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {jobData.videoPresentation?.text}
+                  </a>
+                ) : null}{' '}
+                {jobData.gitLink ? (
+                  <a
+                    href={jobData.gitLink?.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {jobData.gitLink?.text}
+                  </a>
+                ) : null}
+                <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                  {jobData.description}
+                </p>
+                <p className="text-2xl space-x-4  text-center first-letter: sm:text-left font-[family-name:var(--font-geist-mono)">
+                  Technologies used: {jobData.technologies.join(', ')}
+                </p>
+              </li>
+            ),
+          )}
+        </ul>
 
         <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           {' '}
@@ -305,34 +273,3 @@ export default async function Home() {
     </div>
   );
 }
-
-// Remove cookie or perform other actions
-
-//Project Tamped
-// <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-//            <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-//              Title Project
-//            </h3>
-//
-//            <a
-//              href="https://www.linkedin.com/in/bernhard-kratky/"
-//              target="_blank"
-//              rel="noopener noreferrer"
-//            >
-//              https://www.linkedin.com/in/bernhard-kratky/
-//            </a>
-//
-//            <a
-//              href="https://www.linkedin.com/in/bernhard-kratky/"
-//              target="_blank"
-//              rel="noopener noreferrer"
-//            >
-//              https://www.linkedin.com/in/bernhard-kratky/
-//            </a>
-//
-//            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-//      Title Project Text
-// </p>
-// </div>
-// </div>
-// </div>

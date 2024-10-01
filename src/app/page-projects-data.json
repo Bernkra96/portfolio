@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Science Game Edu-game for YouLernit",
+    "link": {
+      "text": "LinkedIn Profile",
+      "url": "https://www.linkedin.com/in/bernhard-kratky/"
+    },
+    "description": "A Video Edu-game, where the Player must Build Up food Chains to make Points. It is a Card Game, where you have hour Hand Cards that can Place to the Table Cards, but you must get the same place or higher in the Food Chain. Develop educational game ideas for kids up to the age of 14, focusing on Physics and Biology.",
+    "technologies": [
+      "Game in Unity for WebGL",
+      "C# for Scripts",
+      "Unity UI Toolkit for UI of Menus and same Button",
+      "Dotween for Animation",
+      "Unity Audio Mixer"
+    ]
+  },
+  {
+    "title": "Jump Game",
+    "link": {
+      "text": "Game Link",
+      "url": "https://bernkra.itch.io/jump-game-000"
+    },
+    "description": "D2 Jump and Run Game, with multiple levels.",
+    "technologies": ["Unity", "C#", "Unity for WebGL"]
+  },
+  {
+    "title": "Canvas View",
+    "link": {
+      "text": "Web Application",
+      "url": "https://final-project-uplevelt.fly.dev/"
+    },
+    "videoPresentation": {
+      "text": "Video Presentation",
+      "url": "https://youtu.be/TIJNlu8PHhc"
+    },
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": "https://github.com/Bernkra96/final-project"
+    },
+    "description": "A social media web application, where users can login and make posts on the page or comment on posts. Users can delete their posts/comments. and admins can delete all. Key features: Design from scratch with Tailwind CCS Admin control via Rest API and database check User authentication with session tokens and cookies User authorization with REST API Database creation and management with PostgreSQL Implementation of database migration Files written in TypeScript Deployment via Fly.io",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CCS",
+      "Docker",
+      "Fly.io",
+      "Cookies",
+      "Migrations",
+      "Rest API"
+    ]
+  }
+]
