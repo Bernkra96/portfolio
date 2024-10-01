@@ -215,22 +215,28 @@ export default async function Home() {
           Education
         </h3>
         <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          {pageEducationData.map((educationData: unknown) => (
-            <li
-              key={educationData as number}
-              className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
-            >
-              <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-                {(educationData as { title: string }).title}
-              </h3>
-              <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-                {(educationData as { date: string }).date}
-              </p>
-              <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-                {(educationData as { content: string }).content}
-              </p>
-            </li>
-          ))}
+          {pageEducationData.map(
+            (educationData: {
+              title: string;
+              date: string;
+              content: string;
+            }) => (
+              <li
+                key={educationData.title}
+                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+              >
+                <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+                  {educationData.title}
+                </h3>
+                <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                  {educationData.date}
+                </p>
+                <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                  {educationData.content}
+                </p>
+              </li>
+            ),
+          )}
         </ul>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
