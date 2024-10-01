@@ -7,7 +7,13 @@ export default async function Home() {
     process.cwd() + '/src/app/page-text-data.json',
     'utf8',
   );
+  const pageEducationFile = await fs.readFile(
+    process.cwd() + '/src/app/page-education-data.json',
+    'utf8',
+  );
+
   const pageTextData = JSON.parse(pageInfoFile);
+  const pageEducationData = JSON.parse(pageEducationFile);
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -208,17 +214,25 @@ export default async function Home() {
         <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           Education
         </h3>
-        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-            Full Stack Web Development Boot camp
-          </h3>
-          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            2023
-          </p>
-          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            UpLeveled GmbH
-          </p>
-        </div>
+        <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          {pageEducationData.map((educationData: unknown) => (
+            <li
+              key={educationData as number}
+              className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+            >
+              <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+                {(educationData as { title: string }).title}
+              </h3>
+              <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                {(educationData as { date: string }).date}
+              </p>
+              <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                {(educationData as { content: string }).content}
+              </p>
+            </li>
+          ))}
+        </ul>
+
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
