@@ -11,9 +11,14 @@ export default async function Home() {
     process.cwd() + '/src/app/page-education-data.json',
     'utf8',
   );
+  const pageJobFile = await fs.readFile(
+    process.cwd() + '/src/app/page-job-data.json',
+    'utf8',
+  );
 
   const pageTextData = JSON.parse(pageInfoFile);
   const pageEducationData = JSON.parse(pageEducationFile);
+  const pageJobData = JSON.parse(pageJobFile);
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -199,17 +204,31 @@ export default async function Home() {
           {' '}
           Jobs
         </h3>
-        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
-            Volunteer Edu-game programmer
-          </h3>
-          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            2024.06 - 2024.09
-          </p>
-          <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            YouLearnt, Manchester GB, Remote from Vienna
-          </p>
-        </div>
+        <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          {pageJobData.map(
+            (jobData: {
+              title: string;
+              dateStart: string;
+              dateEnd: string;
+              content: string;
+            }) => (
+              <li
+                key={jobData.title}
+                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+              >
+                <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
+                  {jobData.title}
+                </h3>
+                <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                  {jobData.dateStart} - {jobData.dateEnd}
+                </p>
+                <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+                  {jobData.content}
+                </p>
+              </li>
+            ),
+          )}
+        </ul>
 
         <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           Education
