@@ -1,7 +1,13 @@
+import fs from 'fs/promises';
 import Image from 'next/image';
 import React from 'react';
 
-export default function Home() {
+export default async function Home() {
+  const pageInfoFile = await fs.readFile(
+    process.cwd() + '/src/app/page-text-data.json',
+    'utf8',
+  );
+  const pageTextData = JSON.parse(pageInfoFile);
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -15,24 +21,16 @@ export default function Home() {
         />
         <h1 className="text-7xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-extrabold">
           {' '}
-          Bernhard portfolio
+          {pageTextData.firstTitle}
         </h1>
 
         <h2 className="text-5xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           {' '}
-          WEB / APP / GAME DEVELOPER
+          {pageTextData.title}
         </h2>
-
+        <div></div>
         <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-          I have always had a strong technical interest and started learning
-          programming and building development projects myself. I started with
-          Arduino programming, continued learning Swift, then Python and
-          continued with web development using React, JavaScript, Next.js and
-          other technologies. Meanwhile I have published several web and mobile
-          applications and did some game development with Unity and game
-          engines. I am a dedicated versatile developer looking for a new
-          challenge, where I am able to further expend and deepen my tech
-          knowledge.
+          {pageTextData.content}
         </p>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -296,5 +294,6 @@ export default function Home() {
 //            <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
 //      Title Project Text
 // </p>
+// </div>
 // </div>
 // </div>
