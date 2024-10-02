@@ -1,5 +1,13 @@
 {
   "firstTitle": "Bernhard Portfolio",
   "title": "WEB / APP / GAME DEVELOPER",
-  "content": "I have always had a strong technical interest and started learning programming and building development projects myself. I started with Arduino programming, continued learning Swift, then Python and continued with web development using React, JavaScript, Next.js and other technologies. Meanwhile I have published several web and mobile applications and did some game development with Unity and game engines. I am a dedicated versatile developer looking for a new challenge, where I am able to further expend and deepen my tech knowledge."
+  "content": "I have always had a strong technical interest and started learning programming and building development projects myself. I started with Arduino programming, continued learning Swift, then Python and continued with web development using React, JavaScript, Next.js and other technologies. Meanwhile I have published several web and mobile applications and did some game development with Unity and game engines. I am a dedicated versatile developer looking for a new challenge, where I am able to further expend and deepen my tech knowledge.",
+  "techSkills": {
+    "title": "TECH SKILLS & TOOLS",
+    "content": "JavaScript TypeScript React Native React Next.js Node.js HTML CSS Python Swift Swift UI C# PostgresSQL Migrations Rest API Tailwind CSS Figma Git GitHub Unity Unity Ui Toolkit WebGL Dotween OBS DaVinci Resolve."
+  },
+  "personalSkills": {
+    "title": "Personal Skills",
+    "content": "Lifelong learner and curious personality Continuously improving Calm and stress resistant Reliant and resilient Willingness to work hard and take challenges Creative and out of the box thinker. Scrum."
+  }
 }

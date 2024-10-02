@@ -61,25 +61,18 @@ export default async function Home() {
         </div>
 
         <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
-          {' '}
-          TECH SKILLS & TOOLS
+          {pageTextData.techSkills.title}
         </h3>
 
         <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-          JavaScript TypeScript React Native React Next.js Node.js HTML CSS
-          Python Swift Swift UI C# PostgresSQL Migrations Rest API Tailwind CSS
-          Figma Git GitHub Unity Unity Ui Toolkit WebGL Dotween OBS DaVinci
-          Resolve
+          {pageTextData.techSkills.content}
         </p>
         <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
-          {' '}
-          Personal Skills
+          {pageTextData.personalSkills.title}
         </h3>
 
         <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-          Lifelong learner and curious personality Continuously improving Calm
-          and stress resistant Reliant and resilient Willingness to work hard
-          and take challenges Creative and out of the box thinker. Scrum.
+          {pageTextData.personalSkills.content}
         </p>
 
         <h2 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
