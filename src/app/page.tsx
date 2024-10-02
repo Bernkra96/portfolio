@@ -79,11 +79,7 @@ export default async function Home() {
         <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
           Lifelong learner and curious personality Continuously improving Calm
           and stress resistant Reliant and resilient Willingness to work hard
-          and take challenges Creative and out of the box thinker
-        </p>
-
-        <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-          Scrum
+          and take challenges Creative and out of the box thinker. Scrum.
         </p>
 
         <h2 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
