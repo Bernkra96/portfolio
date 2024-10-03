@@ -24,6 +24,33 @@
     "technologies": ["Unity", "C#", "Unity for WebGL"]
   },
   {
+    "title": "Gun Game PL (Programming Learning)",
+    "link": {
+      "text": "Game Link",
+      "url": "https://bernkra.itch.io/gungame-pl"
+    },
+    "description": "A Duck hunt style Shooter game.",
+    "technologies": ["Technologies used: Unity, C#, Audacity , Unity for WebGL"]
+  },
+  {
+    "title": "Life Counter TCG",
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/tcg-lebensz%C3%A4hler/id6443781229"
+    },
+    "description": "Life Counter for a Card game, it starts with 20 Points and the user can add or subtract from that. Key features: Swift for the Logic and Swift UI for UI",
+    "technologies": ["Swift, Swift UI, Xcode, Apple Appstore"]
+  },
+  {
+    "title": "Geldzähler Rechner (Monney Counter)",
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/geldz%C3%A4hler-rechner/id1635811854"
+    },
+    "description": "Mommy Counter that adds up the Total. Key features: Swift for the Logic and Swift UI for UI",
+    "technologies": [" Swift, Swift UI, Xcode, Apple Appstore"]
+  },
+  {
     "title": "Canvas View",
     "link": {
       "text": "Web Application",
