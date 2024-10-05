@@ -75,5 +75,57 @@
       "Migrations",
       "Rest API"
     ]
+  },
+  {
+    "title": "Full stack E-Commerce store selling rockets",
+
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": " https://github.com/Bernkra96/next.js-ecommerce-store"
+    },
+    "description": "Key features: Custom Section-ID system. Save cart in a database. Delete cookies after checkout. Connect and query information from PostgreSQL database",
+    "technologies": [
+      ["Next.js", "TypeScript", "Docker", "Fly.io", "Cookies", "PostgreSQL"]
+    ]
+  },
+  {
+    "title": "React random color generator",
+
+    "link": {
+      "text": "Web Application",
+      "url": "https://sunny-crepe-82a970.netlify.app/"
+    },
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": "https://github.com/Bernkra96/react-random-color-generator"
+    },
+
+    "description": "Gives a random Hex Color ",
+    "technologies": ["React", "CCS", "JavaScript"]
+  },
+  {
+    "title": "React Meme Generator",
+
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/bernkra-sticker/id1635597234"
+    },
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": " https://github.com/Bernkra96/next.js-ecommerce-store"
+    },
+    "description": "React Meme Generator",
+    "technologies": ["React", "CSS", "API", "JavaScript"]
+  },
+
+  {
+    "title": "Bernkra Sticker",
+
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/bernkra-sticker/id1635597234"
+    },
+    "description": "Apple iMessage Sticker Pack",
+    "technologies": [["Xcode", "Apple Appstore"]]
   }
 ]
