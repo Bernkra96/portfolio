@@ -24,6 +24,33 @@
     "technologies": ["Unity", "C#", "Unity for WebGL"]
   },
   {
+    "title": "Gun Game PL (Programming Learning)",
+    "link": {
+      "text": "Game Link",
+      "url": "https://bernkra.itch.io/gungame-pl"
+    },
+    "description": "A Duck hunt style Shooter game.",
+    "technologies": ["Unity, C#, Audacity , Unity for WebGL"]
+  },
+  {
+    "title": "Life Counter TCG",
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/tcg-lebensz%C3%A4hler/id6443781229"
+    },
+    "description": "Life Counter for a Card game, it starts with 20 Points and the user can add or subtract from that. Key features: Swift for the Logic and Swift UI for UI",
+    "technologies": ["Swift, Swift UI, Xcode, Apple Appstore"]
+  },
+  {
+    "title": "Geldzähler Rechner (Monney Counter)",
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/geldz%C3%A4hler-rechner/id1635811854"
+    },
+    "description": "Mommy Counter that adds up the Total. Key features: Swift for the Logic and Swift UI for UI",
+    "technologies": [" Swift, Swift UI, Xcode, Apple Appstore"]
+  },
+  {
     "title": "Canvas View",
     "link": {
       "text": "Web Application",
@@ -48,5 +75,57 @@
       "Migrations",
       "Rest API"
     ]
+  },
+  {
+    "title": "E-Commerce Store",
+
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": " https://github.com/Bernkra96/next.js-ecommerce-store"
+    },
+    "description": "Full stack E-Commerce store selling rockets. Key features: Custom Section-ID system. Save cart in a database. Delete cookies after checkout. Connect and query information from PostgreSQL database",
+    "technologies": [
+      ["Next.js", "TypeScript", "Docker", "Fly.io", "Cookies", "PostgreSQL"]
+    ]
+  },
+  {
+    "title": "React random color generator",
+
+    "link": {
+      "text": "Web Application",
+      "url": "https://sunny-crepe-82a970.netlify.app/"
+    },
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": "https://github.com/Bernkra96/react-random-color-generator"
+    },
+
+    "description": "Gives a random Hex Color ",
+    "technologies": ["React", "CCS", "JavaScript"]
+  },
+  {
+    "title": "React Meme Generator",
+
+    "link": {
+      "text": "Web Application",
+      "url": "https://delightful-malabi-92aa0e.netlify.app"
+    },
+    "gitLink": {
+      "text": "GitHub Repository",
+      "url": " https://github.com/Bernkra96/next.js-ecommerce-store"
+    },
+    "description": "React Meme Generator",
+    "technologies": ["React", "CSS", "API", "JavaScript"]
+  },
+
+  {
+    "title": "Bernkra Sticker",
+
+    "link": {
+      "text": "App Store",
+      "url": "https://apps.apple.com/ch/app/bernkra-sticker/id1635597234"
+    },
+    "description": "Apple iMessage Sticker Pack",
+    "technologies": [["Xcode", "Apple Appstore"]]
   }
 ]
