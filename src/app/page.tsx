@@ -79,20 +79,24 @@ export default async function Home() {
           {' '}
           Stores
         </h2>
-        <a
-          href="https://bernkra.itch.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Games on Itch.io
-        </a>
-        <a
-          href="https://apps.apple.com/ch/developer/bernhard-kratky/id1635313235"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Apple App Store
-        </a>
+        <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+          <a
+            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            href="https://bernkra.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Games on Itch.io
+          </a>
+          <a
+            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            href="https://apps.apple.com/ch/developer/bernhard-kratky/id1635313235"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apple App Store
+          </a>
+        </div>
 
         <h2 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           {' '}
@@ -119,33 +123,39 @@ export default async function Home() {
                 <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
                   {jobData.title}
                 </h3>
-                {jobData.link ? (
-                  <a
-                    href={jobData.link?.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {jobData.link?.text}
-                  </a>
-                ) : null}
-                {jobData.videoPresentation ? (
-                  <a
-                    href={jobData.videoPresentation?.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {jobData.videoPresentation?.text}
-                  </a>
-                ) : null}{' '}
-                {jobData.gitLink ? (
-                  <a
-                    href={jobData.gitLink?.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {jobData.gitLink?.text}
-                  </a>
-                ) : null}
+
+                <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+                  {jobData.link ? (
+                    <a
+                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      href={jobData.link?.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {jobData.link?.text}
+                    </a>
+                  ) : null}
+                  {jobData.videoPresentation ? (
+                    <a
+                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      href={jobData.videoPresentation?.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {jobData.videoPresentation?.text}
+                    </a>
+                  ) : null}{' '}
+                  {jobData.gitLink ? (
+                    <a
+                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      href={jobData.gitLink?.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {jobData.gitLink?.text}
+                    </a>
+                  ) : null}
+                </div>
                 <p className="text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)">
                   {jobData.description}
                 </p>

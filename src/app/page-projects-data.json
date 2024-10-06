@@ -77,13 +77,13 @@
     ]
   },
   {
-    "title": "Full stack E-Commerce store selling rockets",
+    "title": "E-Commerce Store",
 
     "gitLink": {
       "text": "GitHub Repository",
       "url": " https://github.com/Bernkra96/next.js-ecommerce-store"
     },
-    "description": "Key features: Custom Section-ID system. Save cart in a database. Delete cookies after checkout. Connect and query information from PostgreSQL database",
+    "description": "Full stack E-Commerce store selling rockets. Key features: Custom Section-ID system. Save cart in a database. Delete cookies after checkout. Connect and query information from PostgreSQL database",
     "technologies": [
       ["Next.js", "TypeScript", "Docker", "Fly.io", "Cookies", "PostgreSQL"]
     ]
@@ -107,8 +107,8 @@
     "title": "React Meme Generator",
 
     "link": {
-      "text": "App Store",
-      "url": "https://apps.apple.com/ch/app/bernkra-sticker/id1635597234"
+      "text": "Web Application",
+      "url": "https://delightful-malabi-92aa0e.netlify.app"
     },
     "gitLink": {
       "text": "GitHub Repository",
