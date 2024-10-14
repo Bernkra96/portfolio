@@ -79,24 +79,22 @@ export default async function Home() {
           {' '}
           Stores
         </h2>
-        <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <a
-            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://bernkra.itch.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Games on Itch.io
-          </a>
-          <a
-            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://apps.apple.com/ch/developer/bernhard-kratky/id1635313235"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Apple App Store
-          </a>
-        </div>
+        <ul className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+          {pageTextData.stores.map(
+            (storeData: { linkUrl: string; linkText: string }) => (
+              <li className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+                <a
+                  className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                  href={storeData.linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {storeData.linkText}
+                </a>
+              </li>
+            ),
+          )}
+        </ul>
 
         <h2 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           {' '}
