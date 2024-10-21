@@ -9,5 +9,12 @@
   "personalSkills": {
     "title": "Personal Skills",
     "content": "Lifelong learner and curious personality Continuously improving Calm and stress resistant Reliant and resilient Willingness to work hard and take challenges Creative and out of the box thinker. Scrum."
-  }
+  },
+  "stores": [
+    { "linkText": "Games on Itch.io", "linkUrl": "https://bernkra.itch.io/" },
+    {
+      "linkText": "Apple App Store",
+      "linkUrl": "https://apps.apple.com/ch/developer/bernhard-kratky/id1635313235"
+    }
+  ]
 }
