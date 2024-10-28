@@ -237,7 +237,20 @@ export default async function Home() {
           </a>
         </div>
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <div className="flex flex-col gap-0.5 row-start-1 items-start sm:items-start">
+          <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            Bernhard Kratky
+          </p>
+          <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            Vienna AT
+          </p>
+          <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
+            bernkra@gmail.com
+          </p>
+        </div>
+
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://www.linkedin.com/in/bernhard-kratky/"
