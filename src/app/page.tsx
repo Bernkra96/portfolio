@@ -26,7 +26,7 @@ export default async function Home() {
   const pageProjectsData = JSON.parse(pageProjectsFile);
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
         <Image
           className="rounded-full justify-center"
           src="https://avatars.githubusercontent.com/u/110023253?v=4"
@@ -49,7 +49,7 @@ export default async function Home() {
           {pageTextData.content}
         </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex gap-4 items-center flex-col sm:flex-row  ">
           <a
             className="rounded-full border bg-gray-300  dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://www.linkedin.com/in/bernhard-kratky/"
@@ -87,7 +87,7 @@ export default async function Home() {
                 key={storeData.linkText}
               >
                 <a
-                  className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                  className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44 "
                   href={storeData.linkUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -104,7 +104,7 @@ export default async function Home() {
           Projects
         </h2>
 
-        <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <ul className="flex flex-col gap-8 row-start-2 items-center ">
           {pageProjectsData.map(
             (jobData: {
               link: { url: string; text: string };
@@ -118,7 +118,7 @@ export default async function Home() {
               content: string;
             }) => (
               <li
-                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+                className="flex flex-col gap-8 row-start-2 items-center"
                 key={jobData.title}
               >
                 <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
@@ -172,7 +172,7 @@ export default async function Home() {
           {' '}
           Jobs
         </h3>
-        <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <ul className="flex flex-col gap-8 row-start-2 items-center ">
           {pageJobData.map(
             (jobData: {
               title: string;
@@ -182,7 +182,7 @@ export default async function Home() {
             }) => (
               <li
                 key={jobData.title}
-                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+                className="flex flex-col gap-8 row-start-2 items-center"
               >
                 <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
                   {jobData.title}
@@ -201,7 +201,7 @@ export default async function Home() {
         <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
           Education
         </h3>
-        <ul className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <ul className="flex flex-col gap-8 row-start-2 items-center  ">
           {pageEducationData.map(
             (educationData: {
               title: string;
@@ -210,7 +210,7 @@ export default async function Home() {
             }) => (
               <li
                 key={educationData.title}
-                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+                className="flex flex-col gap-8 row-start-2 items-center  "
               >
                 <h3 className="text-3xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-semibold ">
                   {educationData.title}
