@@ -75,9 +75,12 @@ export default async function Home() {
           {pageTextData.personalSkills.content}
         </p>
 
-        <h2 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
+        <h2
+          className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold"
+          id="store"
+        >
           {' '}
-          Stores
+          Store
         </h2>
         <ul className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
           {pageTextData.stores.map(
@@ -99,7 +102,10 @@ export default async function Home() {
           )}
         </ul>
 
-        <h2 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
+        <h2
+          className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold"
+          id="projects"
+        >
           {' '}
           Projects
         </h2>
@@ -168,7 +174,10 @@ export default async function Home() {
           )}
         </ul>
 
-        <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
+        <h3
+          className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold"
+          id="jobs"
+        >
           {' '}
           Jobs
         </h3>
@@ -198,7 +207,10 @@ export default async function Home() {
           )}
         </ul>
 
-        <h3 className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold">
+        <h3
+          className="text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono) font-bold"
+          id="education"
+        >
           Education
         </h3>
         <ul className="flex flex-col gap-8 row-start-2 items-center  ">
