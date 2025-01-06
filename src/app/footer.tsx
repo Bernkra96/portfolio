@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="row-start-3 flex gap-6 flex-wrap  items-center justify-center  bg-green-300  dark:bg-green-600  ">
+    <footer className="row-start-3 flex gap-6 flex-wrap  items-center justify-center rounded-t-lg  bg-green-300/75  dark:bg-green-700/75 backdrop-blur-lg  ">
       <div className="flex flex-col gap-0.5 row-start-1 items-start sm:items-start">
         <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
           Bernhard Kratky
