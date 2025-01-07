@@ -51,7 +51,7 @@ export default async function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row  ">
           <a
-            className="rounded-full border bg-gray-300  dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://www.linkedin.com/in/bernhard-kratky/"
             target="_blank"
             rel="noopener noreferrer"
@@ -90,7 +90,7 @@ export default async function Home() {
                 key={storeData.linkText}
               >
                 <a
-                  className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44 "
+                  className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
                   href={storeData.linkUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -134,7 +134,7 @@ export default async function Home() {
                 <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
                   {jobData.link ? (
                     <a
-                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
                       href={jobData.link?.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -144,7 +144,7 @@ export default async function Home() {
                   ) : null}
                   {jobData.videoPresentation ? (
                     <a
-                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
                       href={jobData.videoPresentation?.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -154,7 +154,7 @@ export default async function Home() {
                   ) : null}{' '}
                   {jobData.gitLink ? (
                     <a
-                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
                       href={jobData.gitLink?.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -240,7 +240,7 @@ export default async function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://www.linkedin.com/in/bernhard-kratky/"
             target="_blank"
             rel="noopener noreferrer"
@@ -249,52 +249,6 @@ export default async function Home() {
           </a>
         </div>
       </main>
-
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <div className="flex flex-col gap-0.5 row-start-1 items-start sm:items-start">
-          <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            Bernhard Kratky
-          </p>
-          <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            Vienna AT
-          </p>
-          <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-            bernkra@gmail.com
-          </p>
-        </div>
-
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.linkedin.com/in/bernhard-kratky/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            className="dark:invert"
-            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
-            alt="Linkedin icon"
-            width={32}
-            height={32}
-          />
-        </a>
-
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://github.com/Bernkra96"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            className="dark:invert"
-            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
-            alt="Github icon"
-            width={32}
-            height={32}
-          />
-        </a>
-      </footer>
     </div>
   );
 }

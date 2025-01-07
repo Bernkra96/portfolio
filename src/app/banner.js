@@ -34,10 +34,10 @@ export function Banner() {
   return (
     <div>
       {consentGiven === 'undecided' && (
-        <div className="flex gap-4 items-center flex-col sm:flex-row rid-rows-[20px_1fr_20px] justify-items-center  p-8 ">
+        <div className="sticky top-0 z-4 flex gap-4 items-center flex-col sm:flex-row rid-rows-[20px_1fr_20px] justify-items-center  p-8   bg-green-300/75  dark:bg-green-700/75 backdrop-blur-lg ">
           <p>We have the Next.Js Default cookie</p>
           <button
-            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-green-300 dark:hover:bg-green-700 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             type="button"
             onClick={handleAcceptCookies}
           >
@@ -45,7 +45,7 @@ export function Banner() {
           </button>
           <span> </span>
           <button
-            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border bg-slate-300 dark:bg-gray-900 border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-blue-300 dark:hover:bg-blue-950 hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             type="button"
             onClick={handleDeclineCookies}
           >
