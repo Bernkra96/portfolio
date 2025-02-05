@@ -11,7 +11,7 @@ export default function Footer() {
           Vienna AT
         </p>
         <p className="text-1 text-center sm:text-left font-[family-name:var(--font-geist-mono)">
-          bernkra@gmail.com
+        bernkra@proton.me
         </p>
       </div>
 
