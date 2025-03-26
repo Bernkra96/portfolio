@@ -35,20 +35,20 @@
   {
     "title": "Life Counter TCG",
     "link": {
-      "text": "App Store",
+      "text": "Apple App Store",
       "url": "https://apps.apple.com/ch/app/tcg-lebensz%C3%A4hler/id6443781229"
     },
     "description": "Life Counter for a Card game, it starts with 20 Points and the user can add or subtract from that. Key features: Swift for the Logic and Swift UI for UI",
-    "technologies": ["Swift, Swift UI, Xcode, Apple Appstore"]
+    "technologies": ["Swift, Swift UI, Xcode, Apple App Store"]
   },
   {
-    "title": "Geldzähler Rechner (Monney Counter)",
+    "title": "Geldzähler Rechner (Money Counter)",
     "link": {
-      "text": "App Store",
+      "text": "Apple App Store",
       "url": "https://apps.apple.com/ch/app/geldz%C3%A4hler-rechner/id1635811854"
     },
     "description": "Mommy Counter that adds up the Total. Key features: Swift for the Logic and Swift UI for UI",
-    "technologies": [" Swift, Swift UI, Xcode, Apple Appstore"]
+    "technologies": [" Swift, Swift UI, Xcode, Apple App Store"]
   },
   {
     "title": "Canvas View",
@@ -122,10 +122,10 @@
     "title": "Bernkra Sticker",
 
     "link": {
-      "text": "App Store",
+      "text": "Apple App Store",
       "url": "https://apps.apple.com/ch/app/bernkra-sticker/id1635597234"
     },
     "description": "Apple iMessage Sticker Pack",
-    "technologies": [["Xcode", "Apple Appstore"]]
+    "technologies": [["Xcode", "Apple App Store"]]
   }
 ]
